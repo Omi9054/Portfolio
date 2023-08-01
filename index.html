@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/8cf8174428.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <img src="img/logo_personal.png" class="logo">
+    <nav>
+        <div class="nav-list" id="navlist"> 
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact-us.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+</section>
+        <!-- javascript for menu -->
+        <script>
+            var navlist= document.getElementById("navlist");
+                function showmenu(){
+                    navlist.style.right="0";
+                }
+                function hidemenu(){
+                    navlist.style.right="-200px";
+                }
+        </script>
+        <!-- About -->
+   <section class="about">
+        <div class="home-img">
+            <img src="img/s.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I am Anjuman Ara Omi</h1>
+            <h3>Web Designer</h3>
+            <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
+       
+        <div class="icon">
+            <a href="https://www.facebook.com/omi.mozumder.71"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/AnjumanAraOmi1?s=07"><i class='bx bxl-twitter'></i></a>
+            <a href="https://instagram.com/anjuman__omi?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/anjuman-ara-omi-45b945284"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Omi9054"><i class='bx bxl-github'></i></a>
+        </div>
+        <a href="resumeomi.pdf" class="btn">Download Resume</a>
+    </div>
+   </section>
+
+</body>
+</html>
